@@ -5,13 +5,13 @@ listener = sr.Recognizer()
     ##Reconoce la voz
 engine = pyttsx3.init()
 ##inicializar
-
+##Cambio
 voices = engine.getProperty('voices')
 engine.setProperty('voice',voices[2].id)
 #cambiar la voz
 
 
-engine.say("Buenos días mi amor")
+engine.say("Buenos días My love")
 engine.runAndWait()
 try:
     with sr.Microphone() as source:
